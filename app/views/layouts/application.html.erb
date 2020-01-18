@@ -13,11 +13,13 @@
 
     <nav>
       <%= link_to("Courses", root_path) %>
+      <%= link_to("Teachers", new_teacher_session_path)%> 
       <%= link_to("Students", students_path) %>
       <%= link_to("Assignments", assignments_path) %>
       <%= link_to("Grades", grades_path) %>
     </nav>
-
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
